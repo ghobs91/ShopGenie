@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import SearchBar from './SearchBar';
+import './LandingPage.css'
 class LandingPage extends Component {
   render() {
     return (
-      <div>
-
+      <div className = "landingContainer">
+        <SearchBar/>
       </div>
     );
   }
