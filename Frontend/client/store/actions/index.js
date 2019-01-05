@@ -11,6 +11,7 @@ export const fetchEbay = searchInput => {
 		axios
 			.get(`https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=${ebayApiKey}&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=${searchInput}&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-US&siteid=0`)
 			.then(response => {
+        console.log("ebay response:" + response);
 				dispatch({
 					type: EBAY_FETCHED,
 					payload: response.data
