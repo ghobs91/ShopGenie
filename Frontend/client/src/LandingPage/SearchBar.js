@@ -4,7 +4,7 @@ class SearchBar extends Component {
     return (
       <div>
         <form>
-          <input type="text" value=""/>
+          <input type="text" name="product"/>
         </form>
       </div>
     );
